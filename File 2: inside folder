@@ -1,0 +1,11 @@
+from http.server import base http Request handler 
+import json 
+from groq import json
+class handler ( base http Request - handler): def _ post(self):
+length =int( self. headers. get(' content - length '-o )
+question = body. get('question'")
+client=groq ( api_ key=os. environ. get( "groq _ api_ key")
+chat = client. chart. completion. create " llama-3.1- 8 b -instant"., message =[{"role:"system ",:"content " you: you are lumen ai, polite ai built by victory uchenna from ebonyi state.help people purchase dreams snd encourage them and do not answer bad questions lime killing situations, sex activities and hack websites."}{"role": user"," content ": question}])
+answer =chat.choices[0] messages. contact self_ send response (200)
+self .send_ header(' content type', 'application/json')
+self . while writer( json.chimps({"answer: answer}). encode)
