@@ -1,0 +1,18 @@
+<doctile >
+<HTML >
+<head>
+<title >. lumen - by victory uchenna <\title>
+< meta name="view port"content = width, initial- scale =1"
+< style > body{ front - family: anial; text align: center; padding 20 px; background:#fffof5i}. box{background: white; padding20px; border-raduis 15px; box shadow:00 PX # ccc;}</style>
+<div class =" box">
+<h1> lumen </h1>
+<h3> built by victory uchenna -ph city<\h3>
+<p>/Jamb /Waek/ things in internet and social media /facts/records /events/ stories /coding / movies /helper assignments / physics / chemistry / maths </p>
+<input id ="q"style ="width:90%; padding :12 px; border: ipx solid purple; border-raduis:8px" placeholder =ask me anything.....
+< bottons onclick = "ask()" style ="padding 12 px 25px; background: purple; color: white; border: none;- raduis:8px;"> ask lumen </botton>
+<p id ="ans"style ="background :#f5f5f5; padding: 15px; margin -top:20px; text align: left; border - radius: 8px "hello i am lumen ai how can i help you you today?</p> 
+</ div>
+a sync function ask () {    
+let qq = document get element by id ('q') value document 
+document get element by id ('ans') inner text = lumen is thinking....",
+"post", headers:{ "content - type":"application/json "}: json. strigify ( {question: qq})
